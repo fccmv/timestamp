@@ -5,7 +5,7 @@ function timeHandler (req, res) {
     
     if(isNaN(time))
         time = new Date(parseInt(req.params.date))
-    console.log(time)
+
     var result = {};
     if(isNaN(time)) {
         result.unix = null
