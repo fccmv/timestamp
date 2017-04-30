@@ -4,7 +4,7 @@ function timeHandler (req, res) {
     var time = new Date(req.params.date)
     
     if(isNaN(time))
-        time = new Date(parseInt(req.params.date))
+        time = new Date(parseInt(req.params.date)*1000)
 
     var result = {};
     if(isNaN(time)) {
